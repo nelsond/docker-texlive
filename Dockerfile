@@ -11,7 +11,7 @@ RUN wget --no-verbose \
   "http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" &&\
   tar -xzf install-tl-unx.tar.gz &&\
   cd $(find . -type d -name "install-tl-*" | head -n 1) &&\
-  yes I | perl install-tl && \
+  yes S e R I | perl install-tl && \
   tlmgr update --self --all &&\
   cd .. &&\
   rm -rf install-tl-*
