@@ -11,9 +11,9 @@ RUN wget --no-verbose \
   "http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" &&\
   tar -xzf install-tl-unx.tar.gz &&\
   cd $(find . -type d -name "install-tl-*" | head -n 1) &&\
-  yes S e R I | perl install-tl && \
+  printf "S\ne\nR\nI\n" | perl install-tl && \
   tlmgr update --self --all &&\
   cd .. &&\
   rm -rf install-tl-*
 
-RUN pdflatex --version
+RUN tex --version
