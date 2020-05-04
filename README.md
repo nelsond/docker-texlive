@@ -7,7 +7,8 @@ image. Currently, the following releases of TeX Live are supported:
 * 2016
 * 2017
 * 2018
-* 2019 (current release, tagged `latest`)
+* 2019
+* 2020 (current release, tagged `latest`)
 
 Old releases are installed from the [tug.org/historic](https://www.tug.org/historic/) archive.
 
