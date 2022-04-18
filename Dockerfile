@@ -5,7 +5,7 @@ MAINTAINER Nelson Darkwah Oppong "n@darkwahoppong.com"
 RUN apt-get update &&\
   apt-get -y install wget unzip perl-modules
 
-ENV PATH="/usr/local/texlive/2021/bin/x86_64-linux:${PATH}"
+ENV PATH="/usr/local/texlive/2022/bin/x86_64-linux:${PATH}"
 
 RUN wget --no-verbose \
   "http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" &&\
